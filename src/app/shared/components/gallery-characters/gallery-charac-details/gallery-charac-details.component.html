@@ -1,0 +1,95 @@
+<div class="jeje">
+  <a routerLink="../../characters"
+    ><img
+      class="flecha"
+      src="../../../../assets/images/flecha.png"
+      width="45px"
+  /></a>
+  <a
+    class="volviendo"
+    routerLink="../../characters"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >{{'HOME.FOUR' | translate}} </a
+  >
+  <!-- Volver -->
+</div>
+
+<div *ngIf="nameDetails">
+  <div class="pic">
+    <img width="100" src="{{ nameDetails.image }}" />
+    <h2 class="nombre">
+      {{ nameDetails.name }}
+    </h2>
+  </div>
+  <div class="cuadrado">
+    <div class="cuadritos">
+      <h2>{{'HOME.FIVE' | translate}}</h2>
+      <!-- CASA -->
+      <div *ngFor="let item of housesDetails">
+        <img
+          class="casa"
+          *ngIf="nameDetails.house === item.name"
+          src="{{ item['logoURL'] }}"
+        />
+      </div>
+      <!-- <h4 class="cuadrines">{{ nameDetails.house }}</h4> -->
+    </div>
+    <div class="cuadritos">
+      <h2>{{'HOME.SIX' | translate}}</h2>
+      <!-- ALIANZAS -->
+      <h5 *ngFor="let allegiance of nameDetails.allegiances" class="cuadrines">
+        {{ allegiance }}
+      </h5>
+    </div>
+    <div style ="height:50px" class="cuadritos">
+      <ngx-simplebar
+      data-simplebar-auto-hide="false"
+      class="casasList2"
+      width="100%"
+      height="50px"
+    >
+      <h2>{{'HOME.SEVEN' | translate}}</h2>
+      <!-- APARICIONES -->
+      <h5 *ngFor="let appearance of nameDetails.appearances" class="cuadrines">
+        {{ appearance }}
+      </h5>
+    </ngx-simplebar>
+    </div>
+    <div class="cuadritos">
+      <div>
+      <h2>{{'HOME.EIGHT' | translate}}</h2>
+      <!-- PADRES -->
+        <h4 class="cuadrines">{{ nameDetails.father }}</h4>
+      </div>
+    </div>
+    <div style = "height:50px" class="cuadritos">
+      <ngx-simplebar
+      data-simplebar-auto-hide="false"
+      class="casasList2"
+      width="100%"
+      height="50px"
+    >
+      <h2>{{'HOME.NINE' | translate}}</h2>
+      <!-- DESCENDIENTES -->
+      <h5 *ngFor="let sibling of nameDetails.siblings" class="cuadrines">
+        {{ sibling }}
+      </h5>
+    </ngx-simplebar>
+    </div>
+    <div style = "height:50px" class="cuadritos">
+      <ngx-simplebar
+      data-simplebar-auto-hide="false"
+      class="casasList2"
+      width="100%"
+      height="50px"
+    >
+      <h2>{{'HOME.TEN' | translate}}</h2>
+      <!-- TÍTULOS -->
+      <h5 *ngFor="let title of nameDetails.titles" class="cuadrines">
+        {{ title }}
+      </h5>
+    </ngx-simplebar>
+    </div>
+  </div>
+</div>

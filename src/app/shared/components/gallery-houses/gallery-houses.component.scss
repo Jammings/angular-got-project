@@ -1,0 +1,27 @@
+.houses{
+    background-color:black;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction:column;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    img{
+        width: 200px;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+img:hover{
+    box-shadow: rgb(240, 238, 236) 0px 0px 20px;
+}
+    h2{
+        color: whitesmoke;
+        text-align: center;
+        padding: 0;
+        border: 0;
+        margin: 0;
+    }
+}

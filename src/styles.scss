@@ -1,0 +1,119 @@
+.simplebar-track.simplebar-vertical{
+  background-color: transparent;
+  border-radius: 20px;
+  // border: 3px solid whitesmoke;
+  margin: 55px 0 29px 23px;
+  padding: 0 0 75px;
+  border-radius: 10px;
+  background-color: #443d3d;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  border: 0;
+  color: white;
+}
+
+font-face {
+  font-family: GameofThrones;
+  src: url(assets/fonts/GameofThrones.ttf) format("truetype");
+  font-style: normal;
+h2{
+  font-family: GameofThrones;
+  src: url(assets/fonts/GameofThrones.ttf) format("truetype");
+  font-style: normal;
+}h5{
+  font-family: GameofThrones;
+  src: url(assets/fonts/GameofThrones.ttf) format("truetype");
+  font-style: normal;
+}h4{
+  font-family: GameofThrones;
+  src: url(assets/fonts/GameofThrones.ttf) format("truetype");
+  font-style: normal;
+}p{
+  font-family: GameofThrones;
+  src: url(assets/fonts/GameofThrones.ttf) format("truetype");
+  font-style: normal;
+}
+
+}
+
+// ESTO ES CÓDIGO DEL BUSCADOR HASTA LA ÚLTIMA LÍNEA
+
+$primary: #b8bdbc;
+$secondary: #9b9b9b;
+$white: #fff;
+$gray: #9b9b9b;
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+// -----------------------------------------
+
+
+.house {
+  float: right;
+  margin: 10px;
+  cursor: pointer;
+}
+.flags {
+  position: relative;
+  border: none;
+  cursor: pointer;
+}

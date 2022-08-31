@@ -1,0 +1,25 @@
+<body>
+  <div class="form__group">
+    <input
+      type="input"
+      class="form__field"
+      placeholder="pon un nombre"
+      name="name"
+      id="name"
+      required
+    />
+    <label for="name" class="form__label">{{'HOME.EIGHTEEN' | translate }}</label>
+  </div>
+
+  <!-- <div data-simplebar class="casasList" id="myEl">
+    </div> -->
+  <div style="height: 730px">
+    <ngx-simplebar data-simplebar-auto-hide="false" class="casasList" width="100%" height="300px">
+      <app-gallery-houses class="houses" [list]="houses"></app-gallery-houses>
+    </ngx-simplebar>
+  </div>
+  <!-- Hacer un height: xxx px o 100%(probar con wight) por que
+    aparecerá en tamaño cero -->
+  <!-- <div data-simplebar data-simplebar-auto-hide="false">
+    </div> -->
+</body>

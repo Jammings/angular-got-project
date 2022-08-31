@@ -1,0 +1,65 @@
+<div class="jeje">
+  <a routerLink="../../houses"
+    ><img
+      class="flecha"
+      src="../../../../assets/images/flecha.png"
+      width="45px"
+  /></a>
+  <a
+    class="volviendo"
+    routerLink="../../houses"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >{{'HOME.ELEVEN' | translate}} </a
+  >
+  <!-- Volver -->
+</div>
+
+<div *ngIf="housesDetails">
+  <div class="pic">
+    <div class="cuadraditos">
+      <img *ngIf="housesDetails.logoURL" src="{{ housesDetails.logoURL }}" />
+      <img
+        *ngIf="!housesDetails.logoURL"
+        src="https://res.cloudinary.com/dulzlnv9t/image/upload/v1661972673/Horde_Crest_cadfja.webp"
+      />
+      <h2>
+        {{ housesDetails.name }}
+      </h2>
+    </div>
+  </div>
+  <div class="cuadrado">
+    <div class="cuadritos">
+      <h2>{{'HOME.TWELVE' | translate}}</h2>
+      <!-- LEMA -->
+      <h4>{{ housesDetails.sigil }}</h4>
+    </div>
+    <div class="cuadritos">
+      <h2>{{'HOME.THIRTEEN' | translate}}</h2>
+      <!-- SEDE -->
+      <h4>{{ housesDetails.region }}</h4>
+    </div>
+    <div class="cuadritos">
+      <h2>{{'HOME.FOURTEEN' | translate}}</h2>
+      <!-- RELIGION -->
+      <h4>
+        {{ housesDetails.region }}
+      </h4>
+    </div>
+    <div class="cuadritos">
+      <h2>{{'HOME.FIVETEEN' | translate}}</h2>
+      <!-- ALIANZAS -->
+      <h4>{{ housesDetails.allegiance }}</h4>
+    </div>
+    <div class="cuadritos">
+      <h2>{{'HOME.SIXTEEN' | translate}}</h2>
+      <!-- RELIGIONES -->
+      <h4>{{ housesDetails.religion }}</h4>
+    </div>
+    <div class="cuadritos">
+      <h2>{{'HOME.SEVENTEEN' | translate}}</h2>
+      <!-- FUNDACIÓN -->
+      <h4>{{ housesDetails.createdAt }}</h4>
+    </div>
+  </div>
+</div>

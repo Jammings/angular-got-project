@@ -1,0 +1,73 @@
+.mayor{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+.buton{
+    height: 25px;
+    border: solid 3px var(--white);
+    cursor: pointer;
+}
+.elipse{
+    width: 60px;
+    height: 60px;
+    padding: 13px 16px 14px;
+    border: solid 3px white;
+    border-radius: 50%;
+    margin-right: 60px;
+    margin-bottom: 210px;
+
+} 
+
+.personajes{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    border-top: 2px solid white;
+    padding: 38px;
+    margin-top: 20px;
+
+    h2{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        font-size: 12px;
+
+    }
+    img{
+        padding-top: 10px;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+    
+}
+
+.personajes2:nth-child(odd){
+    margin-left: calc(50% + 20px);
+    border-left: 2px solid white;
+}
+.personajes2:nth-child(even){
+    margin-left: calc(50% - 372px);
+    border-right: 2px solid white;
+    margin-top: 8px;
+}
+
+.arrow{
+align-items: center;
+padding-left: 15px;
+padding-top: 14px;
+  img{
+    height: 19px;
+    width: 14px;
+  }
+}

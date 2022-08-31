@@ -1,0 +1,12 @@
+<header>
+    <a (click)="useLang('en')" class="flags"><img src="../../../../assets/images/english.png" width="45px"/></a>
+    <a (click)="useLang('es')" class="flags"><img src="../../../../assets/images/spain.png" width="46px"/></a>
+    <a routerLink="/" class="house"><img src="../../../../assets/images/home.png" width="40px"/></a>
+</header>
+
+<!-- <label for="">
+    {{ 'HOME.SELECT' | translate }}
+        <select #langselect (change)="translate.use(langselect.value)">
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{lang}}</option>
+    </select>
+</label> -->
