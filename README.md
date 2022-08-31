@@ -4,6 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+
+1) Ejecutar comando <npm i simplebar-angular --save --force> para instalar el simplebar
+2) Ejecutar comando <npm i @ngx-translate/core @ngx-translate/http-loader --save --force> para instalar el translate
+3) Ejecutar comando <npm i --force> si aun da algun error al ejecutar el servidor
+4) Ejecutar comando <ng serve --open> para iniciar el servidor
+
+
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
